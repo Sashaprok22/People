@@ -34,6 +34,7 @@ import com.example.lunchtray.R
 @Composable
 fun StartOrderScreen(
     onStartOrderButtonClicked: () -> Unit,
+    onStartCreditButtonClicked: () -> Unit,
     modifier: Modifier = Modifier
 ) {
     Column(
@@ -47,6 +48,12 @@ fun StartOrderScreen(
         ) {
             Text(stringResource(R.string.start_order))
         }
+        Button(
+            onClick = onStartCreditButtonClicked,
+            Modifier.widthIn(min = 250.dp)
+        ) {
+            Text(stringResource(R.string.credit_start))
+        }
     }
 }
 
@@ -55,6 +62,7 @@ fun StartOrderScreen(
 fun StartOrderPreview(){
     StartOrderScreen(
         onStartOrderButtonClicked = {},
+        onStartCreditButtonClicked = {},
         modifier = Modifier
             .padding(dimensionResource(R.dimen.padding_medium))
             .fillMaxSize()

@@ -28,4 +28,7 @@
     <string name="tax">Tax: %s</string>
     <string name="total">Total: %s</string>
     <string name="submit">Submit</string>
+
+    <string name="credit_start">Рассчитать рабство</string>
+    <string name="credit_money_data">Денежные данные</string>
 </resources>
